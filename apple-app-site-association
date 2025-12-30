@@ -1,0 +1,37 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "RWHVCP63QS.app.advisorcompanion" ],
+             "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true,
+                  "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+               },
+               {
+                  "/": "/integrations/*",
+                  "comment": "Matches any URL with a path that starts with /integrations/."
+               },
+               {
+                  "/": "/settings/*",
+                  "comment": "Matches any URL with a path that starts with /settings/."
+               },
+               {
+                  "/": "/help/*",
+                  "?": { "articleNumber": "????" },
+                  "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'articleNumber' and a value of exactly four characters."
+               }
+             ]
+           }
+       ]
+   },
+   "webcredentials": {
+      "apps": [ "RWHVCP63QS.app.advisorcompanion" ]
+   },
+
+
+    "appclips": {
+        "apps": ["RWHVCP63QS.app.advisorcompanion.clip"]
+    }
+}
